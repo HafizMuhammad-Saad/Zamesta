@@ -1,0 +1,71 @@
+:root {
+    /* Grayscale */
+    --color-title-active: #181a2a;
+    --color-body: #272a41;
+    --color-label: #4e5166;
+    --color-placeholder: #898ca9;
+    --color-line: #d9dbe1;
+    --color-input-background: #f4f5fa;
+    --color-background: #f8f9fc;
+    --color-off-white: #ffffff;
+  
+    /* Primary Colors */
+    --color-primary: #625bff;
+    --color-secondary: #23c9f3;
+    --color-error: #ff5a8a;
+    --color-success: #20c997;
+    --color-warning: #ffbb33;
+  
+    /* Gradient Colors */
+    --color-gradient-primary: linear-gradient(45deg, #625bff, #23c9f3);
+    --color-gradient-secondary: linear-gradient(45deg, #ff5a8a, #ffbb33);
+    --color-gradient-accent: linear-gradient(45deg, #ff5a8a, #23c9f3);
+  
+    /* Additional Color Shades */
+    --color-green-light: #e6f9f0;
+    --color-green-medium: #a3e4cb;
+    --color-green-dark: #167d62;
+  
+    --color-yellow-light: #fff7e6;
+    --color-yellow-medium: #ffda99;
+    --color-yellow-dark: #b37400;
+  
+    --color-red-light: #ffe6eb;
+    --color-red-medium: #ff99ac;
+    --color-red-dark: #b3002d;
+  
+    --color-blue-light: #e6f0ff;
+    --color-blue-medium: #99c2ff;
+    --color-blue-dark: #0047b3;
+
+    
+    /* Typography */
+    --font-family-primary: 'Roboto', sans-serif; /* Primary font family */
+    --font-family-secondary: 'Merriweather', serif; /* Secondary font family */
+    --font-size-base: 16px; /* Base font size */
+    --font-size-large: 24px; /* Large font size for headings */
+    --font-size-small: 14px; /* Small font size for captions, etc. */
+    --line-height-base: 1.5; /* Base line height */
+
+    /* Spacing */
+    --spacing-unit: 8px; /* Base spacing unit */
+    --spacing-small: calc(var(--spacing-unit) * 2); /* 16px */
+    --spacing-medium: calc(var(--spacing-unit) * 4); /* 32px */
+    --spacing-large: calc(var(--spacing-unit) * 6); /* 48px */
+
+    /* Borders */
+    --border-radius-small: 4px; /* Small border radius */
+    --border-radius-medium: 8px; /* Medium border radius */
+    --border-radius-large: 12px; /* Large border radius */
+
+    /* Shadows */
+    --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small shadow */
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2); /* Medium shadow */
+    --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3); /* Large shadow */
+
+    /* Transitions */
+    --transition-duration: 0.3s; /* Transition duration */
+    --transition-timing-function: ease-in-out; /* Transition timing function */
+
+  }
+  
