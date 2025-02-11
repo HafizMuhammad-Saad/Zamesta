@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon{
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ border: 1px solid black;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #0000008f;
+}
+.icon-inner{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+.icon img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+
+
+  
+}
