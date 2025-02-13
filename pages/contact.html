@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container p-4">
     <div class="links py-5">
       <a href="../index.html"> Home</a>
       <span>/</span>
@@ -18,14 +18,14 @@
     </div>
 
     <!-- contact us section -->
-     <div class="row contact_section pe-0 ">
-      <div class="col-lg-3 border border">
+     <div class="row contact_section pe-0 justify-content-center justify-content-between">
+      <div class="col-lg-3 col-md-4 col-sm- p-4">
         <div class="number-card border-bottom pb-4 d-flex flex-column gap-3">
           <div class="icon_detail d-flex align-items-center gap-3 ">
             <div class="icon">
               <img class="img-fluid" src="../assets/contact icons/phone.png" alt="">
             </div>
-            <span>call To us</span>
+            <h5>call To us</h5>
           </div>
           <h6>We are available 24/7, 7 days a week</h6>
           <h6>Phone: +8801611112222</h6>
@@ -35,7 +35,7 @@
             <div class="icon">
               <img class="img-fluid" src="../assets/contact icons/mail.png" alt="">
             </div>
-            <span>write To us</span>
+            <h5>write To us</h5>
           </div>
           <h6>Fill out our form and we will contact you within 24 hours.</h6>
           <h6>Emails: customer@exclusive.com</h6>
@@ -43,22 +43,25 @@
         </div>
         
       </div>
-      <div class="col-lg-8 border p-4 ">
-        <div class="inputs row border p-0">
-          <div class="col-lg-4">
-            <input type="text" placeholder="Your Name">
+      <div class="col-lg-8 col-md-7 col-sm-12 p-4 d-flex row-gap-3 flex-column">
+        <div class="inputs  justify-content-between d-flex ">
+          <div class="col-lg-4 p-2 ps-0">
+            <input type="text" class="w-100" placeholder="Your Name">
           </div>
-          <div class="col-lg-4">
-            <input type="text" placeholder="Your Email">
+          <div class="col-lg-4 p-2 ">
+            <input type="text" class="w-100" placeholder="Your Email">
           </div>
-          <div class="col-lg-4">
-            <input type="text" placeholder="Your Phone">
+          <div class="col-lg-4 p-2 pe-0">
+            <input type="text" class="w-100" placeholder="Your Phone">
           </div>
         </div>
-        <div class="form-floating">
+        <div class="form-floating p-0">
           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-            style="height: 100px"></textarea>
+            style="height: 200px"></textarea>
           <label for="floatingTextarea2">Comments</label>
+        </div>
+        <div class="button d-flex justify-content-end">
+          <button class="btn submit_btn" type="submit">Send Message</button>
         </div>
 
       </div>

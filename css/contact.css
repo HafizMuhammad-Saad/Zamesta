@@ -29,3 +29,35 @@
 .contact_section h6{
   font-size: .9rem !important;
 }
+.contact_section h5{
+  font-size: 1.1rem !important;
+}
+.inputs input{
+  font-size: .9rem;
+  padding: 5px 12px;
+}
+
+.submit_btn{
+    background-color: #DB4444;
+    color: #fff;
+    border-radius: 4px !important;
+    padding: 1rem 3rem !important;
+    font-size: 1rem !important;
+}
+
+
+@media screen and (max-width : 992px) {
+  .contact_section h5 {
+      font-size: 1rem !important;
+    }
+  .number-card h6{
+    font-size: .8rem !important;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .submit_btn {
+    padding: .5rem 1.5rem !important;
+      font-size: .8rem !important;
+  }
+}
