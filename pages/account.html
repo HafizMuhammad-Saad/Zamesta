@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamesta | account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        input {
+            background: #f3f4f6;
+            border: none;
+        }
+        .align-right ul {
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+            <div class="text-gray-500 mb-4 md:mb-0">
+                <a href="#" class="text-gray-500">Home</a> / <span class="text-gray-900">My Account</span>
+            </div>
+            <div class="text-gray-900">
+                Welcome! <span class="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent">Muhammad Saad</span>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row align-right">
+            <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                <div class="mb-6">
+                    <h2 class="text-lg font-semibold text-gray-900">Manage My Account</h2>
+                    <ul class="mt-2">
+                        <li><a href="#" class="bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent">My Profile</a></li>
+                        <li class="mt-2"><a href="#" class="text-gray-500">Address Book</a></li>
+                        <li class="mt-2"><a href="#" class="text-gray-500">My Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h2 class="text-lg font-semibold text-gray-900">My Orders</h2>
+                    <ul class="mt-2">
+                        <li><a href="#" class="text-gray-500">My Returns</a></li>
+                        <li class="mt-2"><a href="#" class="text-gray-500">My Cancellations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-lg font-semibold text-gray-900">My WishList</h2>
+                </div>
+            </div>
+            <div class="w-full md:w-3/4 bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold bg-gradient-to-r from-green-500 to-teal-400 bg-clip-text text-transparent mb-4">Edit Your Profile</h2>
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="first-name" class="block text-gray-700">First Name</label>
+                            <input type="text" id="first-name" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" value="Muhammad Saad">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-gray-700">Last Name</label>
+                            <input type="text" id="last-name" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" value="Muhammad Shoaib">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" value="example@gmail.com">
+                        </div>
+                        <div>
+                            <label for="address" class="block text-gray-700">Address</label>
+                            <input type="text" id="address" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" value="Karachi, 5236, Pakistan">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Password Changes</h3>
+                        <div class="mt-2">
+                            
+                            <input type="password" id="current-password" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" placeholder="Current Password">
+                        </div>
+                        <div class="mt-2">
+                            
+                            <input type="password" id="new-password" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" placeholder="New Password">
+                        </div>
+                        <div class="mt-2">
+
+                            <input type="password" id="confirm-password" class="w-full mt-1 p-2 border border-gray-300 text-gray-600 rounded" placeholder="Confirm New Password">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="button" class="text-gray-500 mr-4">Cancel</button>
+                        <button type="submit" class="bg-gradient-to-r from-green-500 to-teal-400 transition duration-300 ease-in-out hover:opacity-80 text-white px-4 py-2 rounded">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
