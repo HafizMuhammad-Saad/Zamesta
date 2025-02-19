@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../css/product-details.css">
-  <title>Product Details</title>
-
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
+
   <div class="container">
     <div class="links py-5">
       <a href="../index.html"> Account</a>
@@ -22,8 +23,8 @@
       <span>/</span>
       <a href="./contact.html"> Havic HV G-92 Gamepad</a>
     </div>
-    <div class="row justify-content-lg-between g-3">
-      <div class="col-lg-2 d-flex flex-column d-none d-lg-flex gap-3 p-0">
+    <div class="row justify-content-lg-between g-3" id="product-details">
+      <!-- <div class="col-lg-2 d-flex flex-column d-none d-lg-flex gap-3 p-0">
         <div class="img_box p-3">
           <img src="../assets/product_details/product images/joystick1.png" alt="">
         </div>
@@ -135,8 +136,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>-->
+    </div> 
     <div class="related_item_section row justify-content-center justify-content-md-between py-5 ">
       <div class="related_item_top col-md-12 d-flex align-items-center gap-4 ">
         <span></span>
@@ -148,7 +149,7 @@
           <div class="top p-0 w-100 position-relative">
             <div class="bg-white text-black rounded-lg relative">
               <img alt="Red game controller" class=" img-fluid"
-                src="../assets/product_details/related products/joystick.png" />
+                src="https://cdn.pixabay.com/photo/2013/11/22/19/43/saffron-215932_1280.jpg" />
 
             </div>
             <div class="discount_tag bg-red-500 text-white text-xs px-2 py-1 rounded ">
@@ -192,7 +193,7 @@
           <div class="top p-0 w-100 position-relative">
             <div class="bg-white text-black rounded-lg relative">
               <img alt="Red game controller" class=" img-fluid"
-                src="../assets/product_details/related products/keyboard.png" />
+                src="https://images.pexels.com/photos/3993529/pexels-photo-3993529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
             </div>
             <div class="discount_tag bg-red-500 text-white text-xs px-2 py-1 rounded ">
@@ -236,7 +237,7 @@
           <div class="top p-0 w-100 position-relative">
             <div class="bg-white text-black rounded-lg relative">
               <img alt="Red game controller" class=" img-fluid"
-                src="../assets/product_details/related products/lcd.png" />
+                src="https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 
             </div>
             <div class="discount_tag bg-red-500 text-white text-xs px-2 py-1 rounded ">
@@ -280,7 +281,7 @@
           <div class="top p-0 w-100 position-relative">
             <div class="bg-white text-black rounded-lg relative">
               <img alt="Red game controller" class=" img-fluid"
-                src="../assets/product_details/related products/cpu cooler.png" />
+                src="https://images.pexels.com/photos/302163/pexels-photo-302163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
             </div>
             <div class="discount_tag bg-red-500 text-white text-xs px-2 py-1 rounded ">
@@ -457,7 +458,9 @@
   <!-- </div>
   </div>  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="js/index.js"></script>
+  <script type="module" src="../js/config.js"></script>
+  <script type="module" src="../js/product-details.js"></script>
+  <!-- <script type="module" src="../js/script.js"></script> -->
 </body>
 
 </html>
