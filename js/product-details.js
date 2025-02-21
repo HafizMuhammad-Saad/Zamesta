@@ -19,6 +19,10 @@ async function fetchProductDetails(id) {
      displayProductDetails(product);
     }
 
+
+    
+
+
      // Function to display product details on the page
      function displayProductDetails(product) {
         const productDetailsContainer = document.getElementById('product-details');
@@ -64,6 +68,7 @@ async function fetchProductDetails(id) {
 
           </div>
           <div class="reviws">
+          ${product.rating}
             ( 150 Reviews )
           </div>
           <div class="stock_details d-flex gap-3">
@@ -93,17 +98,27 @@ async function fetchProductDetails(id) {
 
         </div>
         
-        <div class="purching_options d-flex justify-content-between align-items-center">
-          <div class="change_qauntity ">
-            <span class="">-</span> <span>2</span> <span>+</span>
-          </div>
-          <div class="purchase_btn">
-            <button class=" w-100 ">Buy Now</button>
-          </div>
-          <div class="addFavories_btn ">
-            <button>🤍</button>
-          </div>
-        </div>
+        <div class="purchasing_options flex justify-between items-center space-x-3 p-2 border rounded-lg">
+  <!-- Quantity Selector -->
+  <div class="change_quantity flex items-center space-x-2">
+    <span class="qty_btn px-3 py-1 bg-gray-200 rounded cursor-pointer hover:bg-gray-300" onclick="updateQuantity(-1)">-</span>
+    <input id="quantityInput" type="number" value="2" min="1" class="w-12 text-center border border-gray-300 rounded" />
+    <span class="qty_btn px-3 py-1 bg-gray-200 rounded cursor-pointer hover:bg-gray-300" onclick="updateQuantity(1)">+</span>
+  </div>
+
+  <!-- Buy Now Button -->
+  <div class="purchase_btn">
+    <button class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+      Buy Now
+    </button>
+  </div>
+
+  <!-- Add to Favorites Button -->
+  <div class="addFavorites_btn">
+    <button id="favBtn" class="text-xl cursor-pointer transition">🤍</button>
+  </div>
+</div>
+
         <div class="return_delivery border ">
           <div class="delivery d-flex border-bottom p-3 gap-4">
             <div class="icon">
@@ -126,7 +141,10 @@ async function fetchProductDetails(id) {
         </div>
       </div>
         `;
+
     }
+
+
 
      // Main logic
      const productId = getProductIdFromUrl();
@@ -135,3 +153,22 @@ async function fetchProductDetails(id) {
      } else {
          document.getElementById('product-details').innerHTML = '<p>No product selected.</p>';
      }
+
+     document.addEventListener("click", function (event) {
+      if (event.target.matches(".qty_btn")) {
+        let container = event.target.closest(".change_quantity");
+        let input = container.querySelector(".quantityInput");
+        let action = event.target.dataset.action;
+    
+        if (action === "decrease") {
+          input.value = Math.max(1, parseInt(input.value) - 1);
+        } else if (action === "increase") {
+          input.value = parseInt(input.value) + 1;
+        }
+      }
+    
+      if (event.target.matches(".favBtn")) {
+        event.target.classList.toggle("text-red-500");
+        event.target.textContent = event.target.classList.contains("text-red-500") ? "❤️" : "🤍";
+      }
+    });
