@@ -1,0 +1,206 @@
+<html>
+
+<head>
+  <title>
+    Customer Account Page
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom {
+      border-radius: 20px;
+    }
+
+    .accordion-button {
+      border-radius: 10px;
+    }
+  </style>
+  </link>
+</head>
+
+<body class="bg-light">
+  <div class="container my-5">
+    <!-- Profile Section -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <img alt="Profile image of the customer" class="rounded-circle me-3 profile-img" height="100"
+            src="https://storage.googleapis.com/a1aa/image/bNMI-IQmAWKj1t8y7xNh3qhb9H70HJ45pP9RFKRcBFY.jpg"
+            width="100" />
+          <div>
+            <h2 class="card-title mb-0">
+              John Doe
+            </h2>
+            <p class="text-muted">
+              johndoe@example.com
+            </p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h3 class="h5">
+            Update Profile
+          </h3>
+          <form>
+            <div class="mb-3">
+              <label class="form-label" for="name">
+                Name
+              </label>
+              <input class="form-control" id="name" type="text" value="John Doe" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">
+                Email
+              </label>
+              <input class="form-control" id="email" type="email" value="johndoe@example.com" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="profileImage">
+                Profile Image
+              </label>
+              <input class="form-control" id="profileImage" type="file" />
+            </div>
+            <button class="btn btn-primary btn-custom" type="submit">
+              Update Profile
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Order History Section -->
+    <div class="card">
+      <div class="card-body">
+        <h3 class="h5 mb-4">
+          Order History
+        </h3>
+        <div class="accordion" id="orderHistory">
+          <!-- Order Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button aria-controls="collapseOne" aria-expanded="true" class="accordion-button"
+                data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+                Order #12345 - Placed on: 2023-10-01
+              </button>
+            </h2>
+            <div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#orderHistory"
+              id="collapseOne">
+              <div class="accordion-body">
+                <h5>
+                  Items:
+                </h5>
+                <ul>
+                  <li>
+                    Product 1
+                  </li>
+                  <li>
+                    Product 2
+                  </li>
+                  <li>
+                    Product 3
+                  </li>
+                </ul>
+                <div class="mt-3">
+                  <button class="btn btn-danger me-2 btn-custom">
+                    Cancel Order
+                  </button>
+                  <button class="btn btn-success btn-custom">
+                    Track Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for each order item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed"
+                data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                Order #12346 - Placed on: 2023-09-25
+              </button>
+            </h2>
+            <div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#orderHistory"
+              id="collapseTwo">
+              <div class="accordion-body">
+                <h5>
+                  Items:
+                </h5>
+                <ul>
+                  <li>
+                    Product A
+                  </li>
+                  <li>
+                    Product B
+                  </li>
+                </ul>
+                <div class="mt-3">
+                  <button class="btn btn-danger me-2 btn-custom">
+                    Cancel Order
+                  </button>
+                  <button class="btn btn-success btn-custom">
+                    Track Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed"
+                data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                Order #12347 - Placed on: 2023-09-20
+              </button>
+            </h2>
+            <div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#orderHistory"
+              id="collapseThree">
+              <div class="accordion-body">
+                <h5>
+                  Items:
+                </h5>
+                <ul>
+                  <li>
+                    Product X
+                  </li>
+                  <li>
+                    Product Y
+                  </li>
+                  <li>
+                    Product Z
+                  </li>
+                </ul>
+                <div class="mt-3">
+                  <button class="btn btn-danger me-2 btn-custom">
+                    Cancel Order
+                  </button>
+                  <button class="btn btn-success btn-custom">
+                    Track Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more orders as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+
+</html>
