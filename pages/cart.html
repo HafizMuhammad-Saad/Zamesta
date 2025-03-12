@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
    
 
 </head>
@@ -34,7 +36,7 @@
                     </tr>
                   </thead>
                   <!-- Table Body -->
-                  <tbody>
+                  <tbody id="table_container">
                     <!-- Row 1 -->
                     <tr class="border-b hover:bg-gray-50 transition duration-200">
                       <td class="py-4 px-4 text-center">
@@ -53,7 +55,7 @@
                       <td class="py-4 px-4 text-center text-gray-700">$19.99</td>
                     </tr>
                     <!-- Row 2 -->
-                    <tr class="border-b hover:bg-gray-50 transition duration-200">
+                    <!-- <tr class="border-b hover:bg-gray-50 transition duration-200">
                       <td class="py-4 px-4 text-center">
                         <a href="#" class="text-gray-500 hover:text-red-500 transition duration-200">
                           <i class="fas fa-times-circle"></i>
@@ -68,9 +70,9 @@
                         <input class="w-16 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" value="1"/>
                       </td>
                       <td class="py-4 px-4 text-center text-gray-700">$19.99</td>
-                    </tr>
+                    </tr> -->
                     <!-- Row 3 -->
-                    <tr class="border-b hover:bg-gray-50 transition duration-200">
+                    <!-- <tr class="border-b hover:bg-gray-50 transition duration-200">
                       <td class="py-4 px-4 text-center">
                         <a href="#" class="text-gray-500 hover:text-red-500 transition duration-200">
                           <i class="fas fa-times-circle"></i>
@@ -85,7 +87,7 @@
                         <input class="w-16 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" value="1"/>
                       </td>
                       <td class="py-4 px-4 text-center text-gray-700">$19.99</td>
-                    </tr>
+                    </tr> -->
                   </tbody>
                 </table>
 
@@ -125,7 +127,7 @@
               <h6 class="font-semibold">
                Subtotal
               </h6>
-              <p>
+              <p id="totalAmount">
                $215.00
               </p>
              </div>
@@ -159,6 +161,10 @@
 
     <!-- Footer-->
 
+    <!-- js files -->
+    <script type="module" src="../js/config.js"></script>
+    <script type="module" src="../js/script.js"></script>
+    <script type="module" src="../js/cart.js"></script>
     <!--Additional links-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
